@@ -1,0 +1,264 @@
+.aboutSection {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  gap: 30px;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+  border-top: 1px solid blue;
+  box-shadow: 0 -2px 10px rgba(0, 123, 255, 0.5),
+    0 -4px 20px rgba(0, 123, 255, 0.4);
+  transition: box-shadow 0.3s ease-in-out;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin: 0 20px;
+}
+
+.aboutContainer::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, blue, blue);
+  z-index: 1;
+  animation: rotate 4s linear infinite;
+}
+
+.aboutContainer::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 45px;
+  background-color: black;
+  z-index: 2;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.aboutText1 {
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: center;
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+}
+
+.aboutText1 span {
+  color: blue;
+}
+
+.aboutText {
+  flex: 2;
+  color: white;
+  font-family: sans-serif;
+  position: relative;
+  z-index: 3;
+  text-align: justify;
+  line-height: 2rem;
+  max-width: 600px;
+  font-family: sans-serif;
+}
+
+.aboutText h2,
+.aboutText p {
+  z-index: 3;
+  margin: 0;
+}
+
+.tagline {
+  font-style: serif;
+  color: blue;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  word-wrap: break-word;
+}
+
+.aboutText a {
+  color: #0070f3;
+  text-decoration: underline;
+}
+
+ .imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+} 
+
+/* .profileImage {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10%;
+  object-fit: cover;
+  border: 3px solid #3b82f6;
+  position: relative;
+  z-index: 3;
+  animation: float 5s ease-in-out infinite;
+  transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.profileImage:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  animation: glow 1.5s infinite alternate;
+} */
+
+
+
+.profileImage {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10%;
+  object-fit: cover;
+  border: 3px solid #3b82f6;
+  position: relative;
+  z-index: 3;
+  animation: float 5s ease-in-out infinite;
+  transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 10px 5px #00A6FF; /* Glow effect visible all the time */
+}
+
+/* Hover effect - Image stays in place, glowing effect enhances */
+.profileImage:hover {
+  transform: translateY(0); /* No movement on hover */
+  box-shadow: 0 0 20px 10px #00A6FF; /* Glowing effect increases on hover */
+  animation: glow 1.5s infinite alternate;
+}
+
+/* Glow animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px 5px #00A6FF, 0 0 15px #00A6FF, 0 0 20px #00A6FF;
+  }
+  50% {
+    box-shadow: 0 0 20px 10px #00A6FF, 0 0 30px 15px #00A6FF, 0 0 40px 20px #00A6FF;
+  }
+  100% {
+    box-shadow: 0 0 10px 5px #00A6FF, 0 0 15px #00A6FF, 0 0 20px #00A6FF;
+  }
+}
+
+/* Floating effect */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .aboutContainer {
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .aboutText1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .profileImage {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 15px;
+  }
+
+  .aboutText h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .aboutText p {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+    text-align: justify;
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutSection {
+    padding: 30px 10px;
+  }
+
+  .aboutText1 {
+    font-size: 2rem;
+  }
+
+  .profileImage {
+    max-width: 100px;
+  }
+
+  .aboutText h2 {
+    font-size: 1.3rem;
+  }
+
+  .aboutText p {
+    font-size: 0.9rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+    margin-top: 0;
+    text-align: center;
+  }
+}

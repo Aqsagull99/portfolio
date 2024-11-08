@@ -1,0 +1,27 @@
+// {
+//   "extends": ["next/core-web-vitals", "next/typescript"]
+// }
+
+
+
+
+{
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript"
+  ],
+  "rules": {
+    "no-unused-vars": "off", // Disable unused variable rule
+    "no-undef": "off", // Disable undefined variable rule
+    "react/no-unescaped-entities": "off", // Disable unescaped entities rule
+    "react/jsx-no-duplicate-props": "off", // Disable duplicate props rule
+    "react/jsx-uses-react": "off", // Disable JSX React use rule
+    "react/jsx-uses-vars": "off", // Disable JSX variable use rule
+    "no-console": "off", // Disable console log rule
+    "next/no-page-custom-font": "off", // Disable custom font page rule
+    "next/no-html-link-for-pages": "off", // Disable HTML links for pages rule
+    "no-restricted-globals": "off", // Disable restricted globals rule
+    "prefer-const": "off" // Disable prefer const rule
+  }
+}
+

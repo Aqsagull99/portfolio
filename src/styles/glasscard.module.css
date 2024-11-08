@@ -1,0 +1,338 @@
+/* glasscard.module.css */
+
+/* .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 100vh;
+    margin-bottom: 20px;
+  }
+  
+  .tiltCard {
+    width: 300px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .tiltCard:hover {
+    transform: scale(1.05);
+  }
+  
+  .heading {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .text {
+    color: #ffffff;
+    font-size: 1rem;
+  }
+   */
+
+
+
+
+
+
+
+
+
+
+
+  /* glasscard.module.css */
+
+/* .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+  }
+  
+  .tiltCard {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .tiltCard:hover {
+    transform: scale(1.05);
+  }
+  
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .heading {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .text {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+    */
+
+
+
+
+
+  /* glasscard.module.css */
+
+/* .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+  }
+  
+  .tiltCard {
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .tiltCard:hover {
+    transform: scale(1.05);
+  }
+  
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .icon {
+    margin-bottom: 10px;
+  }
+  
+  .image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .heading {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .text {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+     */
+
+
+
+
+/* Main container styles */
+ /* Main container styles  */
+ /* Container styles */
+ 
+
+
+
+.containerone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+
+/* Card styles */
+ /* .tiltCard {
+    
+    width: 280px;
+    height: 400px;
+     background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+     backdrop-filter: blur(10px); 
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+ } */
+
+
+
+ .tiltCard {
+    width: 280px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1); /* Glassy background */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Blurred background */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    /* Glass border effect */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Light transparent white border */
+}
+
+
+ .tiltCard:hover {
+    transform: scale(1.05);
+}  
+
+/* Card content */
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Icon and Image */
+.icon {
+    margin-bottom: 10px;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Heading Styles */
+.heading {
+    color: #00A6FF;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    animation: glow 1.5s ease-in-out infinite, slideIn 1s ease-out; /* Glowing and sliding animation */
+}
+
+/* Text Styles */
+.text {
+    color: #00A6FF;
+    font-size: 1rem;
+    margin-top: 5px;
+    text-align: center;
+    animation: glow 1.5s ease-in-out infinite, fadeIn 1s ease-out; /* Glowing and fading animation */
+}
+
+/* Glowing Effect Animation */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #00A6FF, 0 0 10px #00A6FF, 0 0 15px #00A6FF, 0 0 20px #00A6FF;
+        color: #00A6FF;
+    }
+    50% {
+        text-shadow: 0 0 10px #00A6FF, 0 0 15px #00A6FF, 0 0 20px #00A6FF, 0 0 25px #00A6FF;
+        color: #fff;
+    }
+    100% {
+        text-shadow: 0 0 5px #00A6FF, 0 0 10px #00A6FF, 0 0 15px #00A6FF, 0 0 20px #00A6FF;
+        color: #00A6FF;
+    }
+}
+
+/* Slide In Animation for Heading */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Fade In Animation for Text */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 10px; /* Mobile devices ke liye thoda margin adjust */
+        padding: 10px 0; /* Minimal padding smaller screens pe */
+    }
+
+    .tiltCard {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .heading {
+        font-size: 1rem;
+    }
+
+    .text {
+        font-size: 0.9rem;
+    }
+}
+
+   
